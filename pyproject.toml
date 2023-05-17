@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pdf-transform"
+version = "0.1.0"
+description = "Exemple d'OCR avec Python"
+authors = ["Adrien Vossough <adrien.vossough@semifir.com>"]
+readme = "README.md"
+packages = [{include = "pdf_transform"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^23.3.0"
+pathspec = "^0.11.1"
+pillow = "^9.5.0"
+platformdirs = "^3.5.1"
+pymupdf = "^1.22.3"
+pytesseract = "^0.3.10"
+fitz = "^0.0.1.dev2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+create = false
+in-project = true
